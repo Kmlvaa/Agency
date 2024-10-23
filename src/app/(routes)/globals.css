@@ -1,0 +1,39 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #fff6ec;
+  --foreground: #171717;
+  --footer: #f1e8d9;
+  --statisticsBG: #4f4f4f;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #fff6ec;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  background-color: var(--background);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+footer{
+  background-color: var(--footer);
+}
+
+.homePageCard{
+  background-color: var(--footer);
+}
+.Statictics{
+  background: var(--statisticsBG);
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
