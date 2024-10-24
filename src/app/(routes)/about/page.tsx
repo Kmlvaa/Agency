@@ -10,8 +10,8 @@ import Image from 'next/image'
 
 export default function page() {
     return (
-        <div className='px-28 py-20 text-gray-900'>
-            <div className='flex flex-col gap-20'>
+        <div className='py-20 text-gray-900'>
+            <div className='px-28 flex flex-col gap-20'>
                 <div>
                     <h1 className='text-5xl font-bold'>Biz <span className='text-MainOrange'>kimik?</span></h1>
                 </div>
