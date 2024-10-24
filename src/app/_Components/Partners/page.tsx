@@ -2,8 +2,8 @@ import React from 'react'
 
 export default function page() {
   return (
-    <div className='flex flex-col items-center gap-10 mt-28 px-20'>
-        <div className='flex flex-row items-center justify-center text-gray-600'>
+    <div className='flex flex-col items-center gap-10 my-28 px-20'>
+        <div className='flex flex-row items-center justify-center gap-3 text-gray-600'>
             <div className='w-96 h-px bg-gray-600'></div>
             <div>Partnyorlar</div>
             <div className='w-96 h-px bg-gray-600'></div>

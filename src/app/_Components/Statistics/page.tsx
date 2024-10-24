@@ -4,7 +4,7 @@ import Image from 'next/image'
 
 export default function page() {
   return (
-    <div className='bg-DarkGray w-auto h-96 mx-16 rounded-2xl flex flex-row items-center justify-center gap-10'>
+    <div className='bg-DarkGray w-auto h-96 mx-16 rounded-2xl flex flex-row items-center justify-center gap-10 my-20'>
         <div className='bg-MainOrange rounded-2xl flex flex-col justify-evenly items-center h-60 w-80 text-white'>
             <div className='flex flex-row items-center justify-between gap-5'>
                 <div>

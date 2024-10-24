@@ -22,25 +22,23 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body
-        // className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
-        <header>
-          <div className="flex flex-row items-center justify-evenly h-24">
+      <body>
+        <header className="">
+          <div className="flex flex-row items-center justify-evenly h-24 z-20">
             <div className="flex flex-row items-center gap-2 w-36">
               <Image src={logo} alt="logo" width={40} height={40}/>
               <p className="font-bold leading-none">aladdin agency</p>
             </div>
             <div className="flex flex-row items-center gap-12">
-              <Link href='#'>Ana səhifə</Link>
-              <Link href='#'>Haqqəmızda</Link>
-              <Link href='#'>Əlaqə</Link>
-              <Link href='#'>Portfolio</Link>
-              <Link href='#'>Daha çox</Link>
+              <Link href='/' className="cursor-pointer hover:text-MainOrange">Ana səhifə</Link>
+              <Link href='/about' className="cursor-pointer hover:text-MainOrange">Haqqəmızda</Link>
+              <Link href='/contact' className="cursor-pointer hover:text-MainOrange">Əlaqə</Link>
+              <Link href='/portfolio' className="cursor-pointer hover:text-MainOrange">Portfolio</Link>
+              <Link href='#' className="cursor-pointer hover:text-MainOrange">Daha çox</Link>
             </div>
             <div className="flex flex-row gap-4">
-              <button className="text-orange-600 border-2 border-orange-600 rounded-lg py-1 px-3">Daxil ol</button>
-              <button className="bg-orange-600 text-white rounded-lg py-1 px-3 text-sm">Qeydiyyatdan keç</button>
+              <button className="text-MainOrange border-2 border-MainOrange rounded-lg py-1 px-3 hover:bg-MainOrange hover:text-white">Daxil ol</button>
+              <button className="bg-MainOrange text-white rounded-lg py-1 px-3 text-sm border-2 hover:bg-white hover:text-MainOrange hover:border-MainOrange">Qeydiyyatdan keç</button>
             </div>
           </div>
         </header>
@@ -51,26 +49,26 @@ export default function RootLayout({
                   <div>
                     <p className="text-orange-700 font-semibold mb-3">Catalog</p>
                     <ul>
-                      <li className="cursor-pointer">ESWT</li>
-                      <li className="cursor-pointer">HILT</li>
-                      <li className="cursor-pointer">Skin IQ</li>
-                      <li className="cursor-pointer">Rehab Simulators</li>
-                      <li className="cursor-pointer">EECP</li>
+                      <li className="cursor-pointer hover:underline hover:text-MainOrange">ESWT</li>
+                      <li className="cursor-pointer hover:underline hover:text-MainOrange">HILT</li>
+                      <li className="cursor-pointer hover:underline hover:text-MainOrange">Skin IQ</li>
+                      <li className="cursor-pointer hover:underline hover:text-MainOrange">Rehab Simulators</li>
+                      <li className="cursor-pointer hover:underline hover:text-MainOrange">EECP</li>
                     </ul>
                   </div>
                   <div>
                     <p className="text-orange-700 font-semibold mb-3">Services</p>
                     <ul>
-                      <li className="cursor-pointer">Leasing</li>
-                      <li className="cursor-pointer">Consultation</li>
+                      <li className="cursor-pointer hover:underline hover:text-MainOrange">Leasing</li>
+                      <li className="cursor-pointer hover:underline hover:text-MainOrange">Consultation</li>
                     </ul>
                   </div>
                   <div>
                     <p className="text-orange-700 font-semibold mb-3">About</p>
                     <ul>
-                      <li className="cursor-pointer">About us</li>
-                      <li className="cursor-pointer">Partners</li>
-                      <li className="cursor-pointer">News</li>
+                      <li className="cursor-pointer hover:underline hover:text-MainOrange">About us</li>
+                      <li className="cursor-pointer hover:underline hover:text-MainOrange">Partners</li>
+                      <li className="cursor-pointer hover:underline hover:text-MainOrange">News</li>
                     </ul>
                   </div>
                   <div>
@@ -83,10 +81,10 @@ export default function RootLayout({
                   </div>
               </div>
               <div className="flex flex-col gap-4">
-                <Image src={Insta} alt="instagram" width={40} height={40} className="cursor-pointer"/>
-                <Image src={facebook} alt="facebook" width={40} height={40} className="cursor-pointer"/>
-                <Image src={twitter} alt="twitter" width={40} height={40} className="cursor-pointer"/>
-                <Image src={youtube} alt="youtube" width={40} height={40} className="cursor-pointer"/>
+                <Image src={Insta} alt="instagram" width={40} height={40} className="cursor-pointer hover:underline hover:text-MainOrange"/>
+                <Image src={facebook} alt="facebook" width={40} height={40} className="cursor-pointer hover:underline hover:text-MainOrange"/>
+                <Image src={twitter} alt="twitter" width={40} height={40} className="cursor-pointer hover:underline hover:text-MainOrange"/>
+                <Image src={youtube} alt="youtube" width={40} height={40} className="cursor-pointer hover:underline hover:text-MainOrange"/>
               </div>
             </div>
             <div className="flex flex-row items-end gap-5 p-5 w-auto">
