@@ -13,6 +13,7 @@ const config: Config = {
         foreground: "#f1e8d9",
         MainOrange: "#ff4500",
         DarkGray: "#4f4f4f",
+        Brown: "#460d04",
       },
     },
   },

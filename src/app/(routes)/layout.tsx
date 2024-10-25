@@ -1,14 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
-import logo from '../../assets/agency.png'
-import footerLogo from '../../assets/FooterLogo.png'
-import Image from "next/image";
-import Link from "next/link";
-import Insta from '../../assets/instaLogo.png'
-import facebook from '../../assets/faceboolLogo.png'
-import twitter from '../../assets/twitLogo.png'
-import youtube from '../../assets/youtubeLogo.png'
-import footerLogoImage from '../../assets/ALADDİN.svg'
+import Header from '../_Components/Layout/Header/page'
+import Footer from '../_Components/Layout/Footer/page'
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -23,75 +16,9 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body>
-        <header className="">
-          <div className="flex flex-row items-center justify-evenly h-24 z-20">
-            <div className="flex flex-row items-center gap-2 w-36">
-              <Image src={logo} alt="logo" width={40} height={40}/>
-              <p className="font-bold leading-none">aladdin agency</p>
-            </div>
-            <div className="flex flex-row items-center gap-12">
-              <Link href='/' className="cursor-pointer hover:text-MainOrange">Ana səhifə</Link>
-              <Link href='/about' className="cursor-pointer hover:text-MainOrange">Haqqəmızda</Link>
-              <Link href='/contact' className="cursor-pointer hover:text-MainOrange">Əlaqə</Link>
-              <Link href='/portfolio' className="cursor-pointer hover:text-MainOrange">Portfolio</Link>
-              <Link href='#' className="cursor-pointer hover:text-MainOrange">Daha çox</Link>
-            </div>
-            <div className="flex flex-row gap-4">
-              <button className="text-MainOrange border-2 border-MainOrange rounded-lg py-1 px-3 hover:bg-MainOrange hover:text-white">Daxil ol</button>
-              <button className="bg-MainOrange text-white rounded-lg py-1 px-3 text-sm border-2 hover:bg-white hover:text-MainOrange hover:border-MainOrange">Qeydiyyatdan keç</button>
-            </div>
-          </div>
-        </header>
+        <Header />
         {children}
-        <footer className="mt-20">
-            <div className="flex flex-row items-center p-20 justify-between">
-              <div className="flex flex-row items-start justify-between text-gray-700 w-3/5 leading-loose">
-                  <div>
-                    <p className="text-orange-700 font-semibold mb-3">Catalog</p>
-                    <ul>
-                      <li className="cursor-pointer hover:underline hover:text-MainOrange">ESWT</li>
-                      <li className="cursor-pointer hover:underline hover:text-MainOrange">HILT</li>
-                      <li className="cursor-pointer hover:underline hover:text-MainOrange">Skin IQ</li>
-                      <li className="cursor-pointer hover:underline hover:text-MainOrange">Rehab Simulators</li>
-                      <li className="cursor-pointer hover:underline hover:text-MainOrange">EECP</li>
-                    </ul>
-                  </div>
-                  <div>
-                    <p className="text-orange-700 font-semibold mb-3">Services</p>
-                    <ul>
-                      <li className="cursor-pointer hover:underline hover:text-MainOrange">Leasing</li>
-                      <li className="cursor-pointer hover:underline hover:text-MainOrange">Consultation</li>
-                    </ul>
-                  </div>
-                  <div>
-                    <p className="text-orange-700 font-semibold mb-3">About</p>
-                    <ul>
-                      <li className="cursor-pointer hover:underline hover:text-MainOrange">About us</li>
-                      <li className="cursor-pointer hover:underline hover:text-MainOrange">Partners</li>
-                      <li className="cursor-pointer hover:underline hover:text-MainOrange">News</li>
-                    </ul>
-                  </div>
-                  <div>
-                    <p className="text-orange-700 font-semibold mb-2">Contact</p>
-                    <div className="bg-gray-400 h-px w-36 mb-1"></div>
-                    <ul>
-                      <li>example@gmail.com</li>
-                      <li>+994 xx xxx xx xx</li>
-                    </ul>
-                  </div>
-              </div>
-              <div className="flex flex-col gap-4">
-                <Image src={Insta} alt="instagram" width={40} height={40} className="cursor-pointer hover:underline hover:text-MainOrange"/>
-                <Image src={facebook} alt="facebook" width={40} height={40} className="cursor-pointer hover:underline hover:text-MainOrange"/>
-                <Image src={twitter} alt="twitter" width={40} height={40} className="cursor-pointer hover:underline hover:text-MainOrange"/>
-                <Image src={youtube} alt="youtube" width={40} height={40} className="cursor-pointer hover:underline hover:text-MainOrange"/>
-              </div>
-            </div>
-            <div className="flex flex-row items-end gap-5 p-5 w-auto">
-              <Image src={footerLogo} alt="logo" height={210} width={210}/>
-              <Image src={footerLogoImage} alt="Aladdin" height={250}/>
-            </div>
-        </footer>
+        <Footer />
       </body>
     </html>
   );
