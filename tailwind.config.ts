@@ -15,6 +15,7 @@ const config: Config = {
         DarkGray: "#4f4f4f",
         Brown: "#460d04",
       },
+      
     },
   },
   plugins: [],

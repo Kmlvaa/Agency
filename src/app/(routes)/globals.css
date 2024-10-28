@@ -37,3 +37,11 @@ footer{
     text-wrap: balance;
   }
 }
+
+.AboutpopUp{
+  transition: all 0.3 ease;
+  display: none;
+}
+.AboutDiv:hover .AboutpopUp{
+  display: flex;
+}
