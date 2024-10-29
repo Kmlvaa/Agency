@@ -80,11 +80,11 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <div className="flex flex-col items-start gap-3 mt-32 mb-10 px-28">
+      <div className="flex flex-col items-start gap-3 mt-32 mb-10 px-28 max-lg:max-5">
         <div className="bg-orange-600 rounded-full h-2 w-2"></div>
         <div className="w-24 h-px bg-gray-500"></div>
       </div>
-      <div className="flex flex-row items-center justify-between px-28 mb-20">
+      <div className="flex flex-row items-center justify-between px-28 mb-20 max-lg:px-5">
         <div className="w-1/2">
           <h1 className="text-5xl mb-20">Ən <span className="font-semibold">keyfiyyətli</span> xidmətləri təqdim etmək</h1>
           <div className="flex flex-col gap-10">

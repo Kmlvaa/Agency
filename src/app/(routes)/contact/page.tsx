@@ -9,7 +9,7 @@ import Image from 'next/image'
 export default function page() {
     return (
         <div>
-            <div className='px-32 flex flex-row items-start justify-between mt-20 max-md:!flex-col max-md:gap-5'>
+            <div className='px-32 flex flex-row items-start justify-between mt-20 max-md:!flex-col max-md:gap-5 max-[1200px]:px-5'>
                 <div className='text-2xl max-md:bg-LoginFormGray rounded-xl w-full p-4'>
                     <div className='mb-14 flex flex-row gap-2 items-center'>
                         <Image src={map} alt='map light' />

@@ -56,7 +56,7 @@ export default function page() {
             </div>
             <div className="flex flex-row items-end gap-5 p-5 w-auto">
                 <Image src={footerLogo} alt="logo" height={210} width={210} />
-                <Image src={footerLogoImage} alt="Aladdin" height={250} />
+                <Image src={footerLogoImage} alt="Aladdin" className='w-full h-[250px]'/>
             </div>
         </footer>
     )

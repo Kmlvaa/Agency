@@ -11,12 +11,12 @@ export default function page() {
 
     return (
         <header className="relative">
-            <div className="flex flex-row items-center justify-evenly h-24 z-20 font-normal" >
+            <div className="flex flex-row items-center justify-between h-24 z-20 font-normal px-28 max-lg:px-5" >
                 <div className="flex flex-row items-center gap-2 w-36">
                     <Image src={logo} alt="logo" width={40} height={40} />
                     <p className="font-bold leading-none">aladdin agency</p>
                 </div>
-                <div className="flex flex-row items-center gap-12 max-lg:gap-5">
+                <div className="flex flex-row items-center gap-12 max-lg:gap-8">
                     <Link href='/' className="cursor-pointer hover:text-MainOrange">Ana səhifə</Link>
                     <div className='AboutDiv'>
                         <Link href='/about' className="cursor-pointer hover:text-MainOrange">Haqqımızda</Link>

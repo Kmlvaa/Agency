@@ -15,7 +15,7 @@ export default function page() {
 
     return (
         <div className=''>
-            <div className='flex flex-col items-start px-28 my-28'>
+            <div className='flex flex-col items-start px-28 my-28 max-lg:px-5'>
                 <h1 className='font-bold text-5xl mb-20'>Xidmətlərimiz</h1>
                 <div className='grid grid-cols-3 items-center gap-10'>
                     {cards?.map((card) => {
@@ -92,7 +92,7 @@ export default function page() {
                         <h1 className='font-bold text-5xl mb-3'>SMM Paketlərimiz</h1>
                         <p className='text-gray-800'>Lorem ipsum dolor sit amet consectetur. Sollicitudin sed nisi suspendisse odio venenatis id in.</p>
                     </div>
-                    <div className='flex flex-row gap-5 mt-32'>
+                    <div className='flex flex-row items-center justify-center max-lg:flex-wrap gap-5 mt-32'>
                         <div className='card flex flex-col items-center justify-between border border-gray-300 rounded-2xl p-6 shadow-[-1px_5px_8px_0px_rgba(0,_0,_0,_0.1)]'>
                             <Image src={VideoIcon} width={150} height={150} alt='econom' />
                             <p className='text-gray-700 font-bold text-3xl'>599 m</p>
@@ -106,7 +106,7 @@ export default function page() {
                             </ol>
                             <button className='border-2 border-MainOrange px-3 py-1 font-semibold rounded-md text-MainOrange hover:text-white hover:bg-MainOrange'>İndi al</button>
                         </div>
-                        <div className='card flex flex-col items-center justify-between border border-MainOrange relative -top-20 rounded-2xl p-6 shadow-[-1px_5px_8px_0px_rgba(0,_0,_0,_0.1)]'>
+                        <div className='card flex flex-col items-center justify-between border border-MainOrange relative -top-20 max-lg:top-0 rounded-2xl p-6 shadow-[-1px_5px_8px_0px_rgba(0,_0,_0,_0.1)]'>
                             <Image src={VideoIcon2} width={150} height={150} alt='econom' />
                             <p className='text-gray-700 font-bold text-3xl'>1100 m</p>
                             <h1 className='font-bold text-4xl'>Standart</h1>
@@ -120,7 +120,7 @@ export default function page() {
                             </ol>
                             <button className='border-2 border-MainOrange px-3 py-1 font-semibold rounded-md text-MainOrange hover:text-white hover:bg-MainOrange'>İndi al</button>
                         </div>
-                        <div className='card flex flex-col items-center justify-between border border-MainOrange relative -top-20 rounded-2xl p-6 shadow-[-1px_5px_8px_0px_rgba(0,_0,_0,_0.1)]'>
+                        <div className='card flex flex-col items-center justify-between border border-MainOrange relative -top-20 max-lg:top-0 rounded-2xl p-6 shadow-[-1px_5px_8px_0px_rgba(0,_0,_0,_0.1)]'>
                             <Image src={VideoIcon3} width={150} height={150} alt='econom' />
                             <p className='text-gray-700 font-bold text-3xl'>1600 m</p>
                             <h1 className='font-bold text-4xl'>Ekstra</h1>
