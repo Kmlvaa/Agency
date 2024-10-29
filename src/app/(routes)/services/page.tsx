@@ -1,3 +1,4 @@
+'use client'
 import React from 'react'
 import Partners from '../../_Components/Partners/page'
 import Statistics from '../../_Components/Statistics/page'
@@ -6,8 +7,12 @@ import VideoIcon from '../../../assets/Videographer-rafiki 1.svg'
 import VideoIcon2 from '../../../assets/Videographer-cuate 1.svg'
 import VideoIcon3 from '../../../assets/Videographer-pana 1.svg'
 import Image from 'next/image'
+import Modal from '../../_Components/Modals/modal'
 
 export default function page() {
+
+    const [modalShow, setModalShow] = React.useState(false);
+
     return (
         <div className=''>
             <div className='flex flex-col items-start px-28 my-28'>
@@ -22,7 +27,7 @@ export default function page() {
                                 <h1 className='font-semibold text-2xl my-5'>{card.name}</h1>
                                 <p className='text-gray-700'>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Velit officiis.adipisicing elit. Velit officiis.</p>
                                 <div className='flex flex-row gap-2 items-center text-gray-800 mt-10 cursor-pointer hover:text-MainOrange'>
-                                    <p>Daha çox</p>
+                                    <p onClick={() => setModalShow(true)}>Daha çox</p>
                                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" className="bi bi-arrow-right" viewBox="0 0 16 16">
                                         <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8" />
                                     </svg>
@@ -30,6 +35,7 @@ export default function page() {
                             </div>
                         );
                     })}
+                    <Modal show={modalShow}/>
                 </div>
                 <div className='my-20 m-auto'>
                     <div className='text-center'>
