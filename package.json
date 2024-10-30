@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "bootstrap": "^5.3.3",
+    "hamburger-react": "^2.5.1",
     "next": "^14.2.15",
     "popper.js": "^1.16.1",
     "react": "^18",

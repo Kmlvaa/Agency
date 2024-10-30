@@ -35,7 +35,7 @@ export default function page() {
                             </div>
                         );
                     })}
-                    <Modal show={modalShow}/>
+                    <Modal show={modalShow} onHide={() => setModalShow(false)}/>
                 </div>
                 <div className='my-20 m-auto'>
                     <div className='text-center'>

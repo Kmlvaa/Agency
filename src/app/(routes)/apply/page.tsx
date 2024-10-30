@@ -9,16 +9,16 @@ import Partnyors from '../../_Components/Partners/page'
 export default function apply() {
   return (
     <div className='py-20'>
-      <div className='px-32 flex flex-row items-center justify-between gap-20 max-lg:px-5'>
-        <div className='flex flex-col w-2/3'>
+      <div className='px-28 flex flex-row items-center justify-between gap-20 max-lg:px-5'>
+        <div className='flex flex-col w-1/2'>
           <h1 className='text-9xl max-lg:text-8xl font-bold text-gray-700'>Müraciət</h1>
           <div className='flex flex-row gap-5 items-center'>
             <h1 className='text-9xl max-lg:text-8xl font-bold text-gray-700'>et</h1>
             <Image src={plus} alt='plus sign image' className='w-[80px] h-[80px]' />
           </div>
         </div>
-        <div className='w-1/3'>
-          <Image src={about} alt='banner image' width={500} height={500} />
+        <div className='w-[500px] h-[500px]'>
+          <Image src={about} alt='banner image' className='w-full h-full' />
         </div>
       </div>
 

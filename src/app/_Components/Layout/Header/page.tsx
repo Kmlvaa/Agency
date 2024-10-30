@@ -1,13 +1,16 @@
 'use client'
-import React from 'react'
+import React, { useState } from 'react'
 import logo from '../../../../assets/agency.png'
 import Image from "next/image";
 import Link from "next/link";
 import AboutPopup from '../../PopUps/aboutPopup/about'
 import ContactPopup from '../../PopUps/contact'
 import PortfolioPopUp from '../../PopUps/portfolio'
+import Hamburger from 'hamburger-react';
 
 export default function page() {
+
+    const [isOpen, setOpen] = useState(false)
 
     return (
         <header className="relative">
@@ -16,7 +19,10 @@ export default function page() {
                     <Image src={logo} alt="logo" width={40} height={40} />
                     <p className="font-bold leading-none">aladdin agency</p>
                 </div>
-                <div className="flex flex-row items-center gap-12 max-lg:gap-8">
+                <div className='hidden max-sm:flex'>
+                    <Hamburger toggled={isOpen} toggle={setOpen} />
+                </div>
+                <div className="flex flex-row items-center gap-12 max-lg:gap-5 max-lg:text-md max-sm:hidden">
                     <Link href='/' className="cursor-pointer hover:text-MainOrange">Ana səhifə</Link>
                     <div className='AboutDiv'>
                         <Link href='/about' className="cursor-pointer hover:text-MainOrange">Haqqımızda</Link>
@@ -39,9 +45,8 @@ export default function page() {
                         </div>
                     </div>
                 </div>
-                <div className="flex flex-row gap-4">
-                    <button className="text-MainOrange border border-gray-200 rounded-lg py-1 px-3 hover:bg-MainOrange hover:text-white max-[1200px]:hidden">Daxil ol</button>
-                    <button className="bg-MainOrange text-white rounded-lg py-1 px-3 text-sm border hover:bg-white hover:text-MainOrange hover:border-MainOrange">Qeydiyyatdan keç</button>
+                <div className="flex flex-row gap-4 max-sm:hidden">
+                    <button className="bg-MainOrange text-white rounded-md py-1 px-4 text-sm border font-extralight hover:bg-white hover:text-MainOrange hover:border-MainOrange">Müraciət et</button>
                 </div>
             </div>
         </header>

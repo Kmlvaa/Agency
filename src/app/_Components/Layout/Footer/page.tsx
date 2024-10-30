@@ -6,15 +6,16 @@ import Insta from '../../../../assets/instaLogo.png'
 import facebook from '../../../../assets/faceboolLogo.png'
 import twitter from '../../../../assets/twitLogo.png'
 import youtube from '../../../../assets/youtubeLogo.png'
-import footerLogoImage from '../../../../assets/ALADDİN.svg'
+import footerLogoImage from '../../../../assets//Frame 230.svg'
+import respFooter from '../../../../assets/Frame 238.svg'
 
 export default function page() {
     return (
-        <footer className="mt-20">
-            <div className="flex flex-row items-center p-20 justify-between">
-                <div className="flex flex-row items-start justify-between text-gray-700 w-3/5 leading-loose">
+        <footer className="mt-20 flex flex-col justify-between max-sm:flex-row">
+            <div className="flex flex-row items-center justify-between px-20 py-20 max-sm:p-5 max-sm:items-start max-sm:w-3/4 max-lg:px-5 max-lg:py-10">
+                <div className="flex flex-row items-start gap-10 justify-between max-sm:flex-col text-gray-700 w-3/5 leading-loose max-sm:text-2xl text-xl">
                     <div>
-                        <p className="text-orange-700 font-semibold mb-3">Catalog</p>
+                        <p className="text-orange-700 font-semibold mb-3 hover:underline hover:text-MainOrange">Catalog</p>
                         <ul>
                             <li className="cursor-pointer hover:underline hover:text-MainOrange">ESWT</li>
                             <li className="cursor-pointer hover:underline hover:text-MainOrange">HILT</li>
@@ -24,14 +25,14 @@ export default function page() {
                         </ul>
                     </div>
                     <div>
-                        <p className="text-orange-700 font-semibold mb-3">Services</p>
+                        <p className="text-orange-700 font-semibold mb-3 hover:underline hover:text-MainOrange">Services</p>
                         <ul>
                             <li className="cursor-pointer hover:underline hover:text-MainOrange">Leasing</li>
                             <li className="cursor-pointer hover:underline hover:text-MainOrange">Consultation</li>
                         </ul>
                     </div>
                     <div>
-                        <p className="text-orange-700 font-semibold mb-3">About</p>
+                        <p className="text-orange-700 font-semibold mb-3 hover:underline hover:text-MainOrange">About</p>
                         <ul>
                             <li className="cursor-pointer hover:underline hover:text-MainOrange">About us</li>
                             <li className="cursor-pointer hover:underline hover:text-MainOrange">Partners</li>
@@ -39,8 +40,8 @@ export default function page() {
                         </ul>
                     </div>
                     <div>
-                        <p className="text-orange-700 font-semibold mb-2">Contact</p>
-                        <div className="bg-gray-400 h-px w-36 mb-1"></div>
+                        <p className="text-orange-700 font-semibold mb-2 hover:underline hover:text-MainOrange">Contact</p>
+                        <div className="bg-gray-500 h-[0.5px] w-36 mb-1"></div>
                         <ul>
                             <li>example@gmail.com</li>
                             <li>+994 xx xxx xx xx</li>
@@ -54,9 +55,13 @@ export default function page() {
                     <Image src={youtube} alt="youtube" width={40} height={40} className="cursor-pointer hover:underline hover:text-MainOrange" />
                 </div>
             </div>
-            <div className="flex flex-row items-end gap-5 p-5 w-auto">
-                <Image src={footerLogo} alt="logo" height={210} width={210} />
-                <Image src={footerLogoImage} alt="Aladdin" className='w-full h-[250px]'/>
+            <div className="p-5 w-screen h-auto max-sm:hidden">
+                <div>
+                    <Image src={footerLogoImage} alt="Aladdin" className='w-full h-full object-contain' />
+                </div>
+            </div>
+            <div className='w-1/4 h-[700px] hidden max-sm:flex'>
+                <Image src={respFooter} alt='responsive image footer' className='w-full h-full' />
             </div>
         </footer>
     )

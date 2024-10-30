@@ -2,14 +2,15 @@ import { ModalBody, ModalFooter, ModalHeader, ModalTitle } from 'react-bootstrap
 import Button from 'react-bootstrap/Button';
 import Modal from 'react-bootstrap/Modal';
 
-interface Props {
-    show: Function,
+interface ModalProps {
+    show: boolean;
+    onHide: () => void;
 }
 
-function modal(Props) {
+function modal(props : ModalProps) {
     return (
         <Modal
-            {...Props}
+            {...props}
             size="lg"
             aria-labelledby="contained-modal-title-vcenter"
             centered>
