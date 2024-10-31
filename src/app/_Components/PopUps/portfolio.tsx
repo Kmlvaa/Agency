@@ -13,7 +13,7 @@ import Image from 'next/image';
 
 export default function portfolio() {
     return (
-        <div id='portfolioPopup' className='bg-foreground w-screen h-auto p-20 absolute top-24 left-0 rounded-b-3xl flex-col hidden group-hover:flex z-10 transition ease delay-500'>
+        <div id='portfolioPopup' className='bg-foreground w-screen h-auto p-20 absolute top-14 -left-[870px] rounded-b-3xl flex-col hidden group-hover:flex z-10 transition ease delay-500'>
             <h1 className='text-Brown text-2xl font-bold mb-10'>Portfoliomuz</h1>
             <div>
                 <Swiper

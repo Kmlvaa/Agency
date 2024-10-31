@@ -4,7 +4,7 @@ import insta from '../../../assets/insta.svg'
 
 export default function contact() {
     return (
-        <div className='bg-foreground w-screen h-auto p-20 absolute gap-10 top-24 left-0  rounded-b-3xl flex-col justify-between hidden group-hover:flex z-10 transition ease delay-500'>
+        <div className='bg-foreground w-screen h-auto p-20 absolute gap-10 top-14 -left-[770px]  rounded-b-3xl flex-col justify-between hidden group-hover:flex z-10 transition ease delay-500'>
             <h1 className='text-Brown text-2xl font-bold'>Əlaqə</h1>
             <div className='flex flex-row justify-between items-start'>
                 <div className='flex flex-col leading-10'>
