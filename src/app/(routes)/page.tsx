@@ -38,7 +38,7 @@ export default function Home() {
         <div className="bg-orange-600 rounded-full h-2 w-2"></div>
         <div className="w-24 h-px bg-gray-500"></div>
       </div>
-      <div className="flex flex-row items-center justify-between gap-10 px-28 mb-20 max-lg:pl-5 max-lg:pr-0 max-md:flex-col max-md:items-start">
+      <div className="flex flex-row items-center justify-between gap-10 px-28 mb-20 max-lg:pl-5 max-lg:pr-0 max-md:!flex-col max-md:items-start">
         <div className="w-5/12 max-md:w-full">
           <h1 className="text-5xl mb-14 max-lg:text-3xl w-4/5">Ən <span className="font-semibold">keyfiyyətli</span> xidmətləri təqdim etmək</h1>
           <div className="flex flex-col gap-5">
@@ -70,7 +70,7 @@ export default function Home() {
               </div>
             </div>
           </div>
-        </div>
+        </div>  
         <div className="w-7/12 h-4/6 max-md:w-full">
           <Image src={roundedImage} alt="Xidmet" className="w-full object-contain h-full" />
         </div>

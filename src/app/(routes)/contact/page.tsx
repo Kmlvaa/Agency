@@ -5,11 +5,14 @@ import tel from '../../../assets/telephone.svg'
 import map from '../../../assets/Map_light.svg'
 import letter from '../../../assets/email.svg'
 import Image from 'next/image'
+import Frame from '../../../assets/Frame 168.png'
 
 export default function page() {
     return (
         <div>
-            <div className='px-32 flex flex-row items-start justify-between mt-20 max-md:!flex-col max-md:gap-5 max-[1200px]:px-5'>
+            <div className='px-32 flex flex-row items-start justify-between mt-20 max-md:!flex-col max-md:gap-5 max-[1200px]:px-5 max-sm:!flex-col'>
+                <Image src={Frame} alt='frame' className='absolute -top-28 -left-20 z-10 -rotate-12' />
+                <h1 className='text-8xl max-sm:text-6xl font-semibold m-auto mb-20'>Bizimlə əlaqə</h1>
                 <div className='text-2xl max-md:bg-LoginFormGray rounded-xl w-full p-4'>
                     <div className='mb-14 flex flex-row gap-2 items-center'>
                         <Image src={map} alt='map light' />

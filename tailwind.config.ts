@@ -14,6 +14,7 @@ const config: Config = {
         MainOrange: "#ff4500",
         DarkGray: "#4f4f4f",
         Brown: "#460d04",
+        HeaderMenuLi: "#f1e8d9",
       },
       
     },

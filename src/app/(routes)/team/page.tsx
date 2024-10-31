@@ -10,7 +10,7 @@ export default function () {
     <div>
         <Image src={Frame} alt='frame' className='absolute -top-16 left-0 z-10'/>
         <div className='flex flex-col items-center gap-20'>
-            <h1 className='font-bold text-5xl my-20'>Komandamızla tanış olun</h1>
+            <h1 className='font-bold text-5xl my-20 max-sm:text-3xl'>Komandamızla tanış olun</h1>
             <div className='flex flex-wrap items-center justify-center gap-20'>
                 <div className='flex flex-col items-center gap-2'>
                     <Image src={teamImage} alt='team' className='w-60 h-60 rounded-full'/>
