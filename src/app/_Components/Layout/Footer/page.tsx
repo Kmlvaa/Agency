@@ -1,7 +1,5 @@
 import React from 'react'
-import footerLogo from '../../../../assets/FooterLogo.png'
 import Image from "next/image";
-import Link from "next/link";
 import Insta from '../../../../assets/instaLogo.png'
 import facebook from '../../../../assets/faceboolLogo.png'
 import twitter from '../../../../assets/twitLogo.png'
@@ -11,9 +9,9 @@ import respFooter from '../../../../assets/Frame 238.svg'
 
 export default function page() {
     return (
-        <footer className="mt-20 flex flex-col justify-between max-sm:flex-row">
+        <footer className="pt-20 flex flex-col justify-between max-sm:flex-row">
             <div className="flex flex-row items-center justify-between px-20 py-20 max-sm:p-5 max-sm:items-start max-sm:w-3/4 max-lg:px-5 max-lg:py-10">
-                <div className="flex flex-row items-start gap-10 justify-between max-sm:flex-col text-gray-700 w-3/5 leading-loose max-sm:text-2xl text-xl">
+                <div className="flex flex-row items-start gap-10 justify-between max-sm:!flex-col text-gray-700 w-3/5 leading-loose max-sm:text-2xl text-xl">
                     <div>
                         <p className="text-orange-700 font-semibold mb-3 hover:underline hover:text-MainOrange">Catalog</p>
                         <ul>

@@ -7,7 +7,7 @@ import teamImage from '../../../assets/team.png'
 
 export default function () {
   return (
-    <div>
+    <div className='max-md:bg-background'>
         <Image src={Frame} alt='frame' className='absolute -top-16 left-0 z-10'/>
         <div className='flex flex-col items-center gap-20'>
             <h1 className='font-bold text-5xl my-20 max-sm:text-3xl'>Komandamızla tanış olun</h1>

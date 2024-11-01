@@ -12,7 +12,7 @@ import Image from 'next/image'
 
 export default function page() {
     return (
-        <div className='pt-10 text-gray-900'>
+        <div className='pt-10 text-gray-900 max-md:bg-background'>
             <div className='w-[1200px] px-28 flex flex-col m-auto gap-20 max-lg:px-5 max-[1200px]:w-auto'>
                 <div>
                     <h1 className='text-5xl font-bold'>Biz <span className='text-MainOrange'>kimik?</span></h1>

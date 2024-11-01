@@ -7,7 +7,7 @@ import Statistics from '../../_Components/Statistics/page'
 
 export default function page() {
   return (
-    <div className='px-28 mt-20 max-lg:px-5'>
+    <div className='px-28 pt-20 max-lg:px-5 max-md:bg-background'>
       <div className='max-lg:text-center mb-20 w-full'>
         <h1 className='font-semibold text-5xl'>Uğurlu layihələrimiz</h1>
       </div>

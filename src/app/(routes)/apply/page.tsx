@@ -9,7 +9,7 @@ import Partnyors from '../../_Components/Partners/page'
 
 export default function apply() {
   return (
-    <div>
+    <div className='max-md:bg-background'>
       <div className='px-28 flex flex-row items-center justify-between gap-20 max-lg:px-5 max-sm:items-start'>
         <div className='flex flex-col w-1/2 text-9xl max-lg:text-8xl max-sm:text-6xl'>
           <h1 className='font-bold text-gray-700'>Müraciət</h1>

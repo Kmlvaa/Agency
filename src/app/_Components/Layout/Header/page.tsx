@@ -1,5 +1,5 @@
 'use client'
-import React, { useState } from 'react'
+import React from 'react'
 import logo from '../../../../assets/agency.png'
 import Image from "next/image";
 import Link from "next/link";
@@ -7,22 +7,19 @@ import AboutPopup from '../../PopUps/about'
 import ContactPopup from '../../PopUps/contact'
 import PortfolioPopUp from '../../PopUps/portfolio'
 import Hamburger from 'hamburger-react';
-import { useDispatch, useSelector } from 'react-redux';
 import { useAppDispatch, useAppSelector } from '@/app/redux/hooks';
 import { setOpen } from '@/app/redux/slices/menu';
+import Menu from '../../Menu/page'
 
 export default function page() {
-
-    // const [isOpen, setOpen] = useState(false)
-    const [isDropdownOpen, setDropdownOpen] = useState(false)
-    const handleClick = () =>
-        setDropdownOpen(!isDropdownOpen)
 
     const isOpen = useAppSelector((state) => state.menu.isOpen)
     const dispatch = useAppDispatch()
 
+    const toggleShow = () => dispatch(setOpen());
+
     return (
-        <header className="z-50">
+        <header className="z-50 max-md:bg-background">
             <div className="flex flex-row items-center justify-between h-24 z-20 font-normal px-28 max-lg:px-5" >
                 <div className="flex flex-row items-center gap-2 w-36">
                     <Image src={logo} alt="logo" width={40} height={40} />
@@ -55,57 +52,12 @@ export default function page() {
                     <button className="bg-MainOrange text-white rounded-md py-1 px-4 text-sm border font-extralight hover:bg-white hover:text-MainOrange hover:border-MainOrange">Müraciət et</button>
                 </div>
                 <div className='hidden max-sm:flex'>
-                    <Hamburger toggled={isOpen} toggle={() => dispatch(setOpen())} />
+                    <Hamburger toggled={isOpen} toggle={toggleShow} />
                 </div>
             </div>
-            <div className={`fixed top-20 left-0 bg-background p-10 w-full h-screen z-50  ${isOpen ? 'flex' : 'hidden'}`}>
-                <ul className='font-semibold text-2xl leading-[60px] w-full'>
-                    <li>Ana səhifə</li>
-                    <li>Haqqımızda</li>
-                    <li>Partnyorlar</li>
-                    <li>Portfolio</li>
-                    <li className='flex flex-row items-center justify-between text-center'>
-                        <p>Xidmətlər</p>
-                        <p onClick={handleClick}>+</p>
-                    </li>
-                    <ul className={`flex-col gap-5 m-10 ${isDropdownOpen ? 'flex' : '!hidden'}`}>
-                        {services?.map((service) => {
-                            return (
-                                <li key={service.id} className='bg-HeaderMenuLi px-4 py-1 w-auto text-MainOrange rounded-lg '>{service.name}</li>
-                            );
-                        })}
-                    </ul>
-                    <li>Əlaqə</li>
-                    <li>Komandamız</li>
-                </ul>
-            </div>
+            <Menu scroll={false} backdrop={false} />
         </header>
     )
 }
 
-const services = [
-    {
-        id: 1,
-        name: "SMM",
-    },
-    {
-        id: 2,
-        name: "Influencer",
-    },
-    {
-        id: 3,
-        name: "Mobiloqrafiya",
-    },
-    {
-        id: 4,
-        name: "SEO services",
-    },
-    {
-        id: 5,
-        name: "Qrafik dizayn",
-    },
-    {
-        id: 6,
-        name: "Digital marketing",
-    },
-]
+

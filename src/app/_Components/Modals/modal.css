@@ -1,3 +1,11 @@
 .modal .modal-content {
     background-color: #fff6ec;
 }
+
+
+@media screen and (max-width: 900px) {
+    .custom-modal-style {
+        width: 400px;
+        height: auto;
+    }
+}
