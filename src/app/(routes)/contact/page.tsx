@@ -10,8 +10,8 @@ import Frame from '../../../assets/Frame 168.png'
 export default function page() {
     return (
         <div className='max-md:bg-background'>
-            <div className='px-32 flex flex-row items-start justify-between pt-20 max-md:!flex-col max-md:gap-5 max-[1200px]:px-5 max-sm:!flex-col'>
-                <Image src={Frame} alt='frame' className='absolute -top-28 -left-20 z-10 -rotate-12' />
+            <div className='px-32 flex items-start justify-between pt-20 max-md:!flex-col max-md:gap-5 max-[1200px]:px-5 max-sm:!flex-col'>
+                <Image src={Frame} alt='frame' className='absolute -top-32 -left-20 z-10 -rotate-45' />
                 <h1 className='text-8xl max-sm:text-6xl font-semibold m-auto mb-20'>Bizimlə əlaqə</h1>
                 <div className='text-2xl max-md:bg-LoginFormGray rounded-xl w-full p-4'>
                     <div className='mb-14 flex flex-row gap-2 items-center'>
@@ -33,7 +33,7 @@ export default function page() {
                         <p className='text-MainOrange text-xl'>+(994)51 735 77 86</p>
                     </div>
                 </div>
-                <div className='max-md:!mx-5 w-full'>
+                <div className=' w-full '>
                     <p className='text-MainOrange underline mb-2 font-semibold text-xl'>Xəritədə baxın</p>
                     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2505.5875983060946!2d4.378383488787579!3d51.09761799881293!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c3f1d875ad3d69%3A0xbfcdadb0be749ef6!2sX-Academy!5e0!3m2!1sen!2saz!4v1728287176621!5m2!1sen!2saz" className='max-lg:!w-full w-[650px] h-[450px] rounded-xl' allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </div>

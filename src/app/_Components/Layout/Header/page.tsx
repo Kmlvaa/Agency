@@ -9,7 +9,7 @@ import PortfolioPopUp from '../../PopUps/portfolio'
 import Hamburger from 'hamburger-react';
 import { useAppDispatch, useAppSelector } from '@/app/redux/hooks';
 import { setOpen } from '@/app/redux/slices/menu';
-import Menu from '../../Menu/page'
+import Menu from '../../Menu/Menu'
 
 export default function page() {
 

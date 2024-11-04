@@ -5,6 +5,7 @@ import { Offcanvas, OffcanvasBody, OffcanvasHeader } from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.css';
 import Image from 'next/image';
 import logo from '../../../assets/agency.png'
+import Link from 'next/link';
 
 export default function page(props) {
 
@@ -25,36 +26,33 @@ export default function page(props) {
     return (
         <Offcanvas show={isOpen} onHide={handleClose} {...props}>
             <OffcanvasHeader closeButton>
-                <Image src={logo} alt='logo' className='mx-4' />
+                <div className="flex flex-row items-center gap-2 w-40 p-2">
+                    <Image src={logo} alt="logo" width={40} height={40} />
+                    <p className="font-bold leading-none text-lg">aladdin agency</p>
+                </div>
             </OffcanvasHeader>
             <OffcanvasBody>
-                <ul className='font-semibold text-2xl leading-[55px] w-full'>
+                <ul className='font-semibold text-2xl leading-[55px] w-full mt-5'>
                     <li className='flex flex-row items-center justify-between text-center'>
-                        <p>Ana səhifə</p>
+                        <Link href='/' className='text-black no-underline'>Ana səhifə</Link>
                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" className="bi bi-caret-right-fill" viewBox="0 0 16 16">
                             <path d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z" />
                         </svg>
                     </li>
                     <li className='flex flex-row items-center justify-between text-center'>
-                        <p>Haqqımızda</p>
+                        <Link href='/about' className='text-black no-underline'>Haqqımızda</Link>
                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" className="bi bi-caret-right-fill" viewBox="0 0 16 16">
                             <path d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z" />
                         </svg>
                     </li>
                     <li className='flex flex-row items-center justify-between text-center'>
-                        <p>Partnyorlar</p>
-                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" className="bi bi-caret-right-fill" viewBox="0 0 16 16">
-                            <path d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z" />
-                        </svg>
-                    </li>
-                    <li className='flex flex-row items-center justify-between text-center'>
-                        <p>Portfolio</p>
+                        <Link href='/portfolio' className='text-black no-underline'>Portfolio</Link>
                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" className="bi bi-caret-right-fill" viewBox="0 0 16 16">
                             <path d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z" />
                         </svg>
                     </li>
                     <li className='flex flex-row items-center justify-between text-center mt-1'>
-                        <p>Xidmətlər</p>
+                        <Link href='/services' className='text-black no-underline'>Xidmətlər</Link>
                         <p onClick={handleClick}>
                             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" className={`bi bi-caret-right-fill ${isDropdownOpen ? 'hidden' : ''}`} viewBox="0 0 16 16">
                                 <path d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z" />
@@ -72,25 +70,25 @@ export default function page(props) {
                         })}
                     </ul>
                     <li className='flex flex-row items-center justify-between text-center'>
-                        <p>Əlaqə</p>
+                        <Link href='/contact' className='text-black no-underline'>Əlaqə</Link>
                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" className="bi bi-caret-right-fill" viewBox="0 0 16 16">
                             <path d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z" />
                         </svg>
                     </li>
                     <li className='flex flex-row items-center justify-between text-center'>
-                        <p>Komandamız</p>
+                        <Link href='/team' className='text-black no-underline'>Komandamız</Link>
                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" className="bi bi-caret-right-fill" viewBox="0 0 16 16">
                             <path d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z" />
                         </svg>
                     </li>
                 </ul>
-                <div className='mt-60'>
+            </OffcanvasBody>
+                <div className={` ${isDropdownOpen ? 'hidden' : ''}`}>
                     <ul>
                         <li>example@gmail.com</li>
                         <li>+994 xx xxx xx xx</li>
                     </ul>
                 </div>
-            </OffcanvasBody>
         </Offcanvas>
     )
 }

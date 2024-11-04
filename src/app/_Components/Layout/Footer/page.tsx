@@ -9,12 +9,12 @@ import respFooter from '../../../../assets/Frame 238.svg'
 
 export default function page() {
     return (
-        <footer className="pt-20 flex flex-col justify-between max-sm:flex-row">
+        <footer className=" flex flex-col justify-between max-sm:flex-row">
             <div className="flex flex-row items-center justify-between px-20 py-20 max-sm:p-5 max-sm:items-start max-sm:w-3/4 max-lg:px-5 max-lg:py-10">
-                <div className="flex flex-row items-start gap-10 justify-between max-sm:!flex-col text-gray-700 w-3/5 leading-loose max-sm:text-2xl text-xl">
+                <div className="flex items-start gap-10 justify-between max-sm:!flex-col text-gray-700 w-3/5 leading-loose max-sm:text-2xl text-xl">
                     <div>
                         <p className="text-orange-700 font-semibold mb-3 hover:underline hover:text-MainOrange">Catalog</p>
-                        <ul>
+                        <ul className='pl-0'>
                             <li className="cursor-pointer hover:underline hover:text-MainOrange">ESWT</li>
                             <li className="cursor-pointer hover:underline hover:text-MainOrange">HILT</li>
                             <li className="cursor-pointer hover:underline hover:text-MainOrange">Skin IQ</li>
@@ -24,14 +24,14 @@ export default function page() {
                     </div>
                     <div>
                         <p className="text-orange-700 font-semibold mb-3 hover:underline hover:text-MainOrange">Services</p>
-                        <ul>
+                        <ul className='pl-0'>
                             <li className="cursor-pointer hover:underline hover:text-MainOrange">Leasing</li>
                             <li className="cursor-pointer hover:underline hover:text-MainOrange">Consultation</li>
                         </ul>
                     </div>
                     <div>
                         <p className="text-orange-700 font-semibold mb-3 hover:underline hover:text-MainOrange">About</p>
-                        <ul>
+                        <ul className='pl-0'>
                             <li className="cursor-pointer hover:underline hover:text-MainOrange">About us</li>
                             <li className="cursor-pointer hover:underline hover:text-MainOrange">Partners</li>
                             <li className="cursor-pointer hover:underline hover:text-MainOrange">News</li>
@@ -40,7 +40,7 @@ export default function page() {
                     <div>
                         <p className="text-orange-700 font-semibold mb-2 hover:underline hover:text-MainOrange">Contact</p>
                         <div className="bg-gray-500 h-[0.5px] w-36 mb-1"></div>
-                        <ul>
+                        <ul className='pl-0'>
                             <li>example@gmail.com</li>
                             <li>+994 xx xxx xx xx</li>
                         </ul>

@@ -19,10 +19,12 @@ export default function page() {
                 <div></div>
                 {services?.map((service) => {
                     return (
-                        <div key={service.id} className='flex flex-col items-center justify-between w-[350px] !border border-gray-300 rounded-2xl p-6 shadow-[-1px_5px_8px_0px_rgba(0,_0,_0,_0.1)]'>
+                        <div key={service.id} className='flex flex-col items-center justify-between w-[400px] h-[650px] !border border-gray-300 rounded-2xl p-6 shadow-[-1px_5px_8px_0px_rgba(0,_0,_0,_0.1)] [&:nth-child(3)]:!border-MainOrange'>
                             <Image src={VideoIcon} width={150} height={150} alt='econom' />
-                            <p className='text-gray-700 font-bold text-3xl'>{service.price} m</p>
-                            <h1 className='font-bold text-4xl'>{service.title}</h1>
+                            <div className='text-center'>
+                                <p className='text-gray-700 font-bold text-3xl'>{service.price} m</p>
+                                <h1 className='font-bold text-4xl'>{service.title}</h1>
+                            </div>
                             <ol className='text-gray-800 my-5'>
                                 {service.description.map((x) => {
                                     return (
@@ -35,28 +37,28 @@ export default function page() {
                     );
                 })}
             </div>
-            <div className='!hidden max-sm:!flex flex-row items-center text-center justify-center text-xl'>
+            <div className='!hidden max-sm:!flex flex-row !items-center text-center justify-center text-xl w-screen overflow-hidden max-w-[400px]'>
                 <Swiper
                     slidesPerView={1}
                     autoplay={{
-                        delay: 2000,
+                        delay: 3000,
                         disableOnInteraction: false,
                         pauseOnMouseEnter: true
                     }}
                     loop
-                    pagination={true}
                     grabCursor={true}
                     modules={[Autoplay]}
+                    className='flex items-center justify-center'
 
                 >
                     {services?.map((service) => {
                         return (
-                            <SwiperSlide key={service.id} className='!w-[400px]'>
-                                <div key={service.id} className='flex flex-col items-center justify-between w-[350px] !border border-gray-300 rounded-2xl p-6 shadow-[-1px_5px_8px_0px_rgba(0,_0,_0,_0.1)]'>
+                            <SwiperSlide key={service.id}>
+                                <div key={service.id} className='flex flex-col items-center justify-between w-[400px] h-[650px] !border border-gray-300 rounded-2xl p-6 shadow-[-1px_5px_8px_0px_rgba(0,_0,_0,_0.1)] [&:nth-child(3)]:!border-MainOrange'>
                                     <Image src={VideoIcon} width={150} height={150} alt='econom' />
                                     <p className='text-gray-700 font-bold text-3xl'>{service.price} m</p>
                                     <h1 className='font-bold text-4xl'>{service.title}</h1>
-                                    <ol className='text-gray-800 my-5'>
+                                    <ol className='text-gray-800 my-5 ml-5 pl-0 text-start'>
                                         {service.description.map((x) => {
                                             return (
                                                 <li>{x.li}</li>

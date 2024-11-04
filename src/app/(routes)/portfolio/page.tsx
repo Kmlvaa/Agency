@@ -24,13 +24,13 @@ export default function page() {
       </div>
       <div className='flex flex-col gap-10 mt-28'>
         <h1 className='font-semibold text-5xl mb-10'>Video...</h1>
-        <div className='flex flex-row items-start text-end gap-10 max-lg:flex-col max-lg:text-center max-lg:items-center'>
-          <Image src={screen} alt='screen' />
+        <div className='flex items-center text-end gap-10 max-sm:flex-col max-sm:!text-center '>
+          <Image src={screen} alt='screen' className='w-1/2 max-sm:w-full'/>
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis, eveniet quas non adipisci cumque omnis inventore ipsam saepe nisi eos possimus incidunt, consequatur, commodi dolor nulla! Tempora iste vero libero! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Suscipit esse dicta a doloribus numquam facilis vero consequuntur veniam, hic deserunt cum illo dolorem accusamus porro dignissimos iure quae commodi praesentium.</p>
         </div>
-        <div className='flex flex-row items-start text-start gap-10 max-lg:flex-col-reverse max-lg:text-center max-lg:items-center'>
+        <div className='flex items-center text-start gap-10 max-sm:flex-col-reverse max-sm:text-center'>
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis, eveniet quas non adipisci cumque omnis inventore ipsam saepe nisi eos possimus incidunt, consequatur, commodi dolor nulla! Tempora iste vero libero! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Suscipit esse dicta a doloribus numquam facilis vero consequuntur veniam, hic deserunt cum illo dolorem accusamus porro dignissimos iure quae commodi praesentium.</p>
-          <Image src={screen} alt='screen' />
+          <Image src={screen} alt='screen' className='w-1/2 max-sm:w-full'/>
         </div>
       </div>
       <Statistics />
