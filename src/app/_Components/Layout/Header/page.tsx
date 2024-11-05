@@ -26,22 +26,22 @@ export default function page() {
                     <p className="font-bold leading-none">aladdin agency</p>
                 </div>
                 <div className="flex flex-row items-center gap-12 max-lg:gap-5 max-lg:text-md max-sm:hidden">
-                    <Link href='/' className="no-underline text-black cursor-pointer hover:!text-MainOrange">Ana səhifə</Link>
-                    <div className='group relative'>
-                        <Link href='/about' className="no-underline text-black cursor-pointer hover:!text-MainOrange">Haqqımızda</Link>
+                    <Link href='/' className="no-underline text-black cursor-pointer hover:!text-MainOrange active:!underline active:!text-MainOrange">Ana səhifə</Link>
+                    <div className='group float-left py-5'>
+                        <Link href='/about' className="no-underline text-black cursor-pointer hover:!text-MainOrange active:underline active:text-MainOrange">Haqqımızda</Link>
                         <AboutPopup />
                     </div>
-                    <div className='group relative'>
-                        <Link href='/contact' className="no-underline text-black cursor-pointer hover:!text-MainOrange">Əlaqə</Link>
+                    <div className='group float-left py-5'>
+                        <Link href='/contact' className="no-underline text-black cursor-pointer hover:!text-MainOrange active:underline active:text-MainOrange">Əlaqə</Link>
                         <ContactPopup />
                     </div>
-                    <div className='group relative'>
-                        <Link href='/portfolio' id='portfolio' className="no-underline text-black cursor-pointer hover:!text-MainOrange" >Portfolio</Link>
+                    <div className='group float-left py-5'>
+                        <Link href='/portfolio' id='portfolio' className="no-underline text-black cursor-pointer hover:!text-MainOrange active:underline active:text-MainOrange" >Portfolio</Link>
                         <PortfolioPopUp />
                     </div>
-                    <div className='relative group'>
-                        <Link href='#' id='more' className="no-underline text-black cursor-pointer hover:!text-MainOrange group" >Daha çox </Link>
-                        <div className='absolute top-14 w-40 h-40 p-3 border border-t-white border-l-foreground border-b-foreground border-r-foreground bg-background text-Brown font-semibold rounded-b-xl flex-col justify-evenly hidden group-hover:flex shadow-[0px_0px_8px_0px_rgba(0,_0,_0,_0.1)]'>
+                    <div className='relative group py-5'>
+                        <Link href='#' id='more' className="no-underline text-black cursor-pointer hover:!text-MainOrange group active:underline active:text-MainOrange" >Daha çox </Link>
+                        <div className='absolute top-20 w-40 h-40 p-3 border border-t-white border-l-foreground border-b-foreground border-r-foreground bg-background text-Brown font-semibold rounded-b-xl flex-col justify-evenly hidden group-hover:flex shadow-[0px_0px_8px_0px_rgba(0,_0,_0,_0.1)]'>
                             <div className='hover:bg-foreground rounded-xl p-2 cursor-pointer'>Portfolio</div>
                             <div className='hover:bg-foreground rounded-xl p-2 cursor-pointer'>Contact</div>
                             <div className='hover:bg-foreground rounded-xl p-2 cursor-pointer'>About us</div>
