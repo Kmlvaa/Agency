@@ -49,7 +49,7 @@ export default function page() {
                     </div>
                 </div>
                 <div className="flex flex-row gap-4 max-sm:hidden">
-                    <button className="bg-MainOrange text-white rounded-md py-1 px-4 text-sm border font-extralight hover:bg-white hover:text-MainOrange hover:border-MainOrange">Müraciət et</button>
+                    <Link href='/apply' className="no-underline bg-MainOrange text-white rounded-md py-1 px-4 text-sm border font-extralight hover:bg-white hover:!text-MainOrange hover:!border-MainOrange">Müraciət et</Link>
                 </div>
                 <div className='hidden max-sm:flex'>
                     <Hamburger toggled={isOpen} toggle={toggleShow} />

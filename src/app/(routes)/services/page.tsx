@@ -19,7 +19,7 @@ export default function page() {
                 <div className='grid grid-cols-3 items-center gap-3 max-sm:!grid-cols-1 max-md:!grid-cols-2'>
                     {cards?.map((card) => {
                         return (
-                            <div key={card.id} className='group h-[550px] max-sm:h-auto relative bg-foreground border border-gray-200 rounded-2xl flex flex-col gap-5 max-sm:items-center max-sm:flex-row items-start px-5 py-8 shadow-[inset_0px_-1px_19px_0px_rgba(0,_0,_0,_0.1)] hover:bg-MainOrange hover:text-white'
+                            <div key={card.id} className='group h-[550px] max-sm:h-auto relative bg-foreground border border-gray-200 rounded-2xl flex flex-col gap-5 max-sm:items-center max-sm:flex-row items-start px-5 max-sm:px-2 py-8 shadow-[inset_0px_-1px_19px_0px_rgba(0,_0,_0,_0.1)] hover:bg-MainOrange hover:text-white'
                                 onClick={() => setModalShow(true)}>
                                 <div className='bg-white rounded-full !w-16 !h-16 p-3 mb-2 max-sm:p-1'>
                                     <Image src={Icon} alt='icon' className='w-full h-full object-contain' />

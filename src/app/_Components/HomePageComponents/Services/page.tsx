@@ -23,7 +23,11 @@ export default function page() {
                                 <p className="text-sm text-gray-600 group-hover:text-white max-sm:hidden">{service.desc}</p>
                             </div>
                             <div className='w-24 h-24 rounded-full bg-MainOrange group-hover:bg-white hidden max-sm:flex items-center justify-center '>
-                                <Link href='/services' className='no-underline text-white group-hover:!text-MainOrange'>{/* <Icon name='angle double left' size='small' /> */} +</Link>
+                                <Link href='/services' className='no-underline text-white group-hover:!text-MainOrange'>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" className="bi bi-arrow-right w-8 h-8" viewBox="0 0 16 16">
+                                        <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8" />
+                                    </svg>
+                                </Link>
                             </div>
                             <div className="w-full h-px bg-gray-400 my-5 max-sm:hidden"></div>
                         </div>

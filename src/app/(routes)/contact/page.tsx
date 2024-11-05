@@ -10,9 +10,11 @@ import Frame from '../../../assets/Frame 168.png'
 export default function page() {
     return (
         <div className='max-md:bg-background'>
+            <Image src={Frame} alt='frame' className='absolute max-sm:-top-32 -top-36 -left-16 max-sm:-left-20 z-10 -rotate-12' />
+            <div className='flex items-center justify-center'>
+                <h1 className='text-7xl max-sm:text-6xl font-semibold'>Bizimlə əlaqə</h1>
+            </div>
             <div className='px-32 flex items-start justify-between pt-20 max-md:!flex-col max-md:gap-5 max-[1200px]:px-5 max-sm:!flex-col'>
-                <Image src={Frame} alt='frame' className='absolute -top-32 -left-20 z-10 -rotate-45' />
-                <h1 className='text-8xl max-sm:text-6xl font-semibold m-auto mb-20'>Bizimlə əlaqə</h1>
                 <div className='text-2xl max-md:bg-LoginFormGray rounded-xl w-full p-4'>
                     <div className='mb-14 flex flex-row gap-2 items-center'>
                         <Image src={map} alt='map light' />
