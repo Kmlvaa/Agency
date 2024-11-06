@@ -26,7 +26,7 @@ export default function page(props) {
 
 
     return (
-        <Offcanvas show={isOpen} onHide={handleClose} {...props}>
+        <Offcanvas show={isOpen} onHide={handleClose} {...props} className='!w-full'>
             <OffcanvasHeader closeButton>
                 <div className="flex flex-row items-center gap-2 w-40 p-2">
                     <Image src={logo} alt="logo" width={40} height={40} />

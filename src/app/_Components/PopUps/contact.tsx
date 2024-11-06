@@ -7,7 +7,7 @@ import youtube from '../../../assets/Group 5.svg'
 
 export default function contact() {
     return (
-        <div className='bg-foreground w-full left-0 top-20 h-auto p-20 absolute gap-10 z-50 rounded-b-3xl flex-col justify-between hidden group-hover:flex group-hover:visible transition ease delay-500'>
+        <div className='bg-foreground w-full left-0 top-20 h-auto p-20 absolute gap-10 rounded-b-3xl flex-col justify-between hidden group-hover:flex group-hover:visible z-10 transition ease delay-500'>
             <h1 className='text-Brown text-2xl font-bold'>Əlaqə</h1>
             <div className='flex flex-row justify-between items-start'>
                 <div className='flex flex-col leading-7'>
