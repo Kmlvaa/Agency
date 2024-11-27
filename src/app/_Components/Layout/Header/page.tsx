@@ -23,7 +23,7 @@ export default function page() {
             <div className="flex flex-row items-center justify-between h-24 z-20 font-normal px-28 max-lg:px-5" >
                 <div className="flex flex-row items-center gap-2 w-36">
                     <Image src={logo} alt="logo" width={40} height={40} />
-                    <p className="font-bold leading-none">aladdin agency</p>
+                    <p className="font-bold leading-none text-lg">aladdin agency</p>
                 </div>
                 <div className="flex flex-row items-center gap-12 max-lg:gap-5 max-lg:text-md max-sm:hidden">
                     <Link href='/' className="no-underline text-black cursor-pointer hover:!text-MainOrange active:!underline active:!text-MainOrange">Ana səhifə</Link>
@@ -49,7 +49,7 @@ export default function page() {
                     </div>
                 </div>
                 <div className="flex flex-row gap-4 max-sm:hidden">
-                    <Link href='/apply' className="no-underline bg-MainOrange text-white rounded-md py-1 px-4 text-sm border font-extralight hover:bg-white hover:!text-MainOrange hover:!border-MainOrange">Müraciət et</Link>
+                    <Link href='/apply' className="no-underline bg-MainOrange text-white rounded-md py-2 px-5 text-md border font-extralight hover:bg-white hover:!text-MainOrange hover:!border-MainOrange">Müraciət et</Link>
                 </div>
                 <div className='hidden max-sm:flex'>
                     <Hamburger toggled={isOpen} toggle={toggleShow} />

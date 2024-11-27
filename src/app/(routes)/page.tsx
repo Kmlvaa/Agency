@@ -14,9 +14,9 @@ export default function Home() {
     <div className="m-0 bg-background">
       <div className="flex items-center justify-between relative max-sm:hidden">
         <div className="flex flex-row items-start w-full">
-          <div className="h-full w-2/3  flex items-start">
+          <div className="h-full w-2/3 flex items-start">
             <Image src={Orange} alt="Section1" className="h-auto w-auto object-contain" />
-            <p className="absolute top-1/3 w-2/5 text-white left-20">
+            <p className="absolute top-1/3 w-2/5 text-white left-20 leading-10 text-xl pl-10">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda fugit officia, ex autem sed molestiae dolore natus veritatis sit accusantium excepturi. Tempora pariatur quis sunt debitis quos amet exercitationem quod?
             </p>
           </div>
