@@ -1,6 +1,6 @@
 import React from 'react'
 import screen from '../../../assets/Screen.svg'
-import iphone from '../../../assets/Iphone.svg'
+import agency from '../../../assets/agency.webp'
 import Image from 'next/image'
 import Partners from '../../_Components/Partners/page'
 import Statistics from '../../_Components/Statistics/page'
@@ -15,9 +15,9 @@ export default function page() {
         {data?.map((x) => {
           return (
             <div className='flex flex-col gap-4 w-auto max-md:items-center' key={x.id}>
-              <Image src={iphone} alt='screen' />
+              <Image src={agency} alt='screen' className='rounded-xl'/>
               <h1 className='font-semibold text-xl'>{x.title}</h1>
-              <p>{x.desk}</p>
+              <p className='font-sans'>{x.desk}</p>
             </div>
           );
         })}
@@ -48,22 +48,22 @@ interface Data {
 let data: Data[] = [
   {
     id: 1,
-    title: "Lorem Ipsum",
-    desk: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eum veritatis nam voluptatum consequatur repudiandae iste quisquam soluta aperiam deleniti amet nobis, incidunt maxime dolor ab aliquid deserunt, sit dicta expedita."
+    title: "X Academy",
+    desk: "X Academy tələbələri texnologiya və innovasiyalar sahəsində qabaqcıl bacarıq və biliklərlə gücləndirməyə həsr olunmuş əsas təhsil müəssisəsidir. Təcrübəli öyrənmə və sənaye əməkdaşlığına diqqət yetirərək, X Academy fərdləri karyeralarında üstün olmağa və dünyaya mənalı təsir göstərməyə hazırlayır."
   },
   {
     id: 2,
-    title: "Lorem Ipsum",
-    desk: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eum veritatis nam voluptatum consequatur repudiandae iste quisquam soluta aperiam deleniti amet nobis, incidunt maxime dolor ab aliquid deserunt, sit dicta expedita."
+    title: "Aladdin Agency",
+    desk: "Aladdin Agency cəsarətli ideyaları təsirli kampaniyalara çevirməkdə ixtisaslaşmış dinamik marketinq və yaradıcı həllər firmasıdır. Yeniliklərə və hekayələrə diqqət yetirərək, biz brendlərə tam potensiallarını üzə çıxarmağa və izləyiciləri ilə mənalı şəkildə əlaqə yaratmağa kömək edirik."
   },
   {
     id: 3,
-    title: "Lorem Ipsum",
-    desk: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eum veritatis nam voluptatum consequatur repudiandae iste quisquam soluta aperiam deleniti amet nobis, incidunt maxime dolor ab aliquid deserunt, sit dicta expedita."
+    title: "X Academy",
+    desk: "X Academy tələbələri texnologiya və innovasiyalar sahəsində qabaqcıl bacarıq və biliklərlə gücləndirməyə həsr olunmuş əsas təhsil müəssisəsidir. Təcrübəli öyrənmə və sənaye əməkdaşlığına diqqət yetirərək, X Academy fərdləri karyeralarında üstün olmağa və dünyaya mənalı təsir göstərməyə hazırlayır."
   },
   {
     id: 4,
-    title: "Lorem Ipsum",
-    desk: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eum veritatis nam voluptatum consequatur repudiandae iste quisquam soluta aperiam deleniti amet nobis, incidunt maxime dolor ab aliquid deserunt, sit dicta expedita."
+    title: "Aladdin Agency",
+    desk: "Aladdin Agency cəsarətli ideyaları təsirli kampaniyalara çevirməkdə ixtisaslaşmış dinamik marketinq və yaradıcı həllər firmasıdır. Yeniliklərə və hekayələrə diqqət yetirərək, biz brendlərə tam potensiallarını üzə çıxarmağa və izləyiciləri ilə mənalı şəkildə əlaqə yaratmağa kömək edirik."
   },
 ];

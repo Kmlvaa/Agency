@@ -21,9 +21,9 @@ export default function page() {
     return (
         <header className="z-50 max-md:bg-background">
             <div className="flex flex-row items-center justify-between h-24 z-20 font-normal px-28 max-lg:px-5" >
-                <div className="flex flex-row items-center gap-2 w-36">
+                <div className="flex flex-row items-center justify-center gap-2 w-36">
                     <Image src={logo} alt="logo" width={40} height={40} />
-                    <p className="font-bold leading-none text-lg">aladdin agency</p>
+                    <p className="font-bold leading-none text-xl">aladdin agency</p>
                 </div>
                 <div className="flex flex-row items-center gap-12 max-lg:gap-5 max-lg:text-md max-sm:hidden">
                     <Link href='/' className="no-underline text-black cursor-pointer hover:!text-MainOrange active:!underline active:!text-MainOrange">Ana səhifə</Link>
@@ -39,7 +39,7 @@ export default function page() {
                         <Link href='/portfolio' id='portfolio' className="no-underline text-black cursor-pointer hover:!text-MainOrange active:underline active:text-MainOrange" >Portfolio</Link>
                         <PortfolioPopUp />
                     </div>
-                    <div className='relative group py-5'>
+                    <div className='relative group py-10'>
                         <Link href='#' id='more' className="no-underline text-black cursor-pointer hover:!text-MainOrange group active:underline active:text-MainOrange" >Daha çox </Link>
                         <div className='absolute top-20 w-40 h-40 p-3 border border-t-white border-l-foreground border-b-foreground border-r-foreground bg-background text-Brown font-semibold rounded-b-xl flex-col justify-evenly hidden group-hover:flex shadow-[0px_0px_8px_0px_rgba(0,_0,_0,_0.1)]'>
                             <div className='hover:bg-foreground rounded-xl p-2 cursor-pointer'>Portfolio</div>
