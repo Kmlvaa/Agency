@@ -1,6 +1,4 @@
 import React from 'react'
-import screen from '../../../assets/Screen.svg'
-import agency from '../../../assets/agency.webp'
 import Image from 'next/image'
 import Partners from '../../_Components/Partners/page'
 import Statistics from '../../_Components/Statistics/page'
@@ -13,14 +11,16 @@ export default function page() {
       <div className='max-lg:text-center mb-20 w-full'>
         <h1 className='font-semibold text-5xl'>Uğurlu layihələrimiz</h1>
       </div>
-      <div className='grid grid-cols-2 items-center justify-between gap-20 max-lg:gap-10 max-lg:justify-center max-md:grid-cols-1'>
+      <div className='grid grid-cols-2 items-start justify-between gap-20 max-lg:gap-10 max-lg:justify-center max-md:grid-cols-1'>
         {data?.map((x, index) => {
           return (
             <div className={`flex flex-col gap-4 w-auto max-md:items-center ${index % 2 == 1 ? 'items-end text-end' : ''}`} key={x.id}>
-              <Image src={x.url} width={500} height={400} alt='screen' className='rounded-xl cover max-md:w-full' />
+              <div className='border-[5px] border-black border-solid w-full h-[300px] max-lg:h-[200px] rounded-xl '>
+                <Image src={x.url} width={500} height={400} alt='screen' className='cover w-full h-full rounded-xl' />
+              </div>
               <h1 className='font-semibold text-xl'>{x.title}</h1>
               <p className='font-sans break-words'>{x.desk}</p>
-            </div> 
+            </div>
           );
         })}
       </div>
@@ -78,24 +78,24 @@ let data: Data[] = [
     id: 1,
     title: 'E-Ticarət Platforması: "Rahat Alışveriş"',
     desk: "Müştərilər üçün istifadəçi dostu və intuitiv interfeysə sahib bir e-ticarət platforması hazırlamaq. Layihədə sürətli məhsul axtarışı, sadələşdirilmiş ödəniş prosesi və çoxdilli dəstək kimi funksiyalar tətbiq edilmişdir. Nəticədə müştərilərimiz onlayn satışlarını artırmış, istifadəçi məmnuniyyətində əhəmiyyətli irəliləyiş əldə etmişlər.",
-    url: '/images/rahat.jpeg'
+    url: '/images/shop.jpg'
   },
   {
     id: 2,
     title: 'Mobil Tətbiq: "Fəal Sağlamlıq"',
     desk: "Fərdlərin gündəlik sağlamlıq vərdişlərini izləmələri üçün xüsusi bir mobil tətbiq hazırlanmışdır. Tətbiq istifadəçilərə qidalanma planları, məşq cədvəlləri və stress idarəetmə məsləhətləri təqdim edir. İnteraktiv interfeys və müasir dizayn sayəsində tətbiq yüksək reytinqlər almış və geniş istifadəçi kütləsi qazanmışdır.",
-    url: '/images/saglamliq.jpg'
+    url: '/images/helth.avif'
   },
   {
     id: 3,
     title: 'CRM Sisteminin İnkişafı: "Effektiv Müştəri İdarəetməsi"',
     desk: "Orta və böyük müəssisələr üçün müştəri əlaqələrinin idarə edilməsini optimallaşdırmaq məqsədilə xüsusi CRM sistemi yaradılmışdır. Sistem, müştəri məlumatlarını idarə etməyi, satış təqibini və analiz hesabatlarını asanlaşdırır. Layihə, şirkətlərin iş proseslərini avtomatlaşdıraraq məhsuldarlığı əhəmiyyətli dərəcədə artırmışdır.",
-    url: '/images/musteri.jpeg'
+    url: '/images/musteri.jpg'
   },
   {
     id: 4,
     title: 'Vebsayt Dizaynı: "Markanızı Tanıyın"',
     desk: "Müxtəlif sektorlar üçün yaradıcı və müasir dizayn yanaşması ilə unikal vebsaytlar hazırlanmışdır. Layihələrdə yüksək sürətli yükləmə, mobil uyğunluq və interaktiv elementlərə xüsusi diqqət yetirilmişdir. Nəticədə müştərilərimiz brendlərinin tanınma səviyyəsini artırmış və potensial müştərilərini cəlb etməkdə uğur qazanmışdır.",
-    url: '/images/marka.png'
+    url: '/images/brend.webp'
   },
 ];

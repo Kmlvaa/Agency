@@ -18,7 +18,7 @@ export default function portfolio() {
             <div>
                 <Swiper
                     modules={[Navigation, Pagination, Scrollbar, A11y]}
-                    spaceBetween={50}
+                    spaceBetween={40}
                     slidesPerView={3}
                     grabCursor={true}
                     autoplay={{
@@ -26,12 +26,40 @@ export default function portfolio() {
                     }}
                     loop
                 >
-                    <SwiperSlide><Image src={Screen} alt='screen' /></SwiperSlide>
-                    <SwiperSlide><Image src={Screen} alt='screen' /></SwiperSlide>
-                    <SwiperSlide><Image src={Screen} alt='screen' /></SwiperSlide>
-                    <SwiperSlide><Image src={Screen} alt='screen' /></SwiperSlide>
+                    {portfolios?.map((portfolio) => {
+                        return (
+                            <SwiperSlide key={portfolio.id}>
+                                <div className='w-[400px] h-[250px] rounded-lg border-8 border-solid border-black max-xl:w-full max-xl:h-[200px] max-lg:h-[150px]'>
+                                    <Image src={portfolio.imageUrl} alt='portfolio' width={400} height={300} className='w-full h-full cover rounded-xl' />
+                                </div>
+                            </SwiperSlide>
+                        );
+                    })}
                 </Swiper>
             </div>
         </div>
     )
 }
+
+const portfolios = [
+    {
+        id: 1,
+        imageUrl: '/images/brend.webp',
+        link: '/portfolio'
+    },
+    {
+        id: 2,
+        imageUrl: '/images/musteri.jpg',
+        link: '/portfolio'
+    },
+    {
+        id: 3,
+        imageUrl: '/images/shop.jpg',
+        link: '/portfolio'
+    },
+    {
+        id: 4,
+        imageUrl: '/images/helth.avif',
+        link: '/portfolio'
+    },
+]
