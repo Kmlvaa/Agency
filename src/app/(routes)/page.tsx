@@ -16,8 +16,10 @@ export default function Home() {
         <div className="flex flex-row items-start w-full">
           <div className="h-full w-2/3 flex items-start">
             <Image src={Orange} alt="Section1" className="h-auto w-auto object-contain" />
-            <p className="absolute top-1/3 w-2/5 text-white left-20 leading-10 text-xl pl-10">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda fugit officia, ex autem sed molestiae dolore natus veritatis sit accusantium excepturi. Tempora pariatur quis sunt debitis quos amet exercitationem quod?
+            <p className="absolute top-1/3 w-2/5 text-white left-20 leading-8 text-lg pl-10">
+              Aladdin Agency, hər bir müştərinin unikal ehtiyaclarını anlayaraq, onlara xüsusi hazırlanmış
+                rəqəmsal həllər təqdim etmək və onların uğurunu təmin etmək üçün işinə yüksək səviyyədə
+              həssas yanaşan bir dijital marketinq agentliyidir.
             </p>
           </div>
           <div className="w-1/3 h-auto">
@@ -28,7 +30,7 @@ export default function Home() {
           <Image src={AladdinLogoBanner} alt="LogoBanner" className="w-full object-contain" />
         </div>
       </div>
-      <HomeBannerMobile/>
+      <HomeBannerMobile />
       <div className="flex flex-col items-center gap-3 mt-32 max-lg:mt-20">
         <div className="bg-orange-600 rounded-full h-2 w-2"></div>
         <div className="w-24 h-0.5 bg-gray-500"></div>
@@ -70,7 +72,7 @@ export default function Home() {
               </div>
             </div>
           </div>
-        </div>  
+        </div>
         <div className="w-7/12 h-4/6 max-md:w-full">
           <Image src={roundedImage} alt="Xidmet" className="w-full object-contain h-full" />
         </div>

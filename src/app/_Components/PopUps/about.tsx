@@ -10,12 +10,14 @@ export default function about() {
             <div className='flex flex-row items-center gap-20 h-auto'>
                 <div className='w-3/5'>
                     <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis, dolorum. Dolor hic officia adipisci, quae rem at laboriosam harum placeat deserunt impedit nemo quia, exercitationem, soluta voluptate dignissimos maiores optio.
-                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsam, esse labore repellendus deserunt placeat quo illum corrupti quisquam sint! Nesciunt eaque, quibusdam accusamus perferendis optio nulla quae alias quod id.
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt ratione molestiae reprehenderit. Enim esse asperiores fugiat ad voluptatem? Aperiam facilis ex voluptates dolor consequuntur. Officiis, quas! Dolores at expedita magnam.
+                        Aladdin Agency, müştərilərinin biznes məqsədlərini daha dərindən başa düşərək, onların brendini rəqəmsal
+                        aləmdə gücləndirmək üçün yaradıcı strategiyalar və yenilikçi texnologiyalardan istifadə edir.
+                        Agentliyimiz hər bir layihədə fərqli yanaşmalar təklif edərək, həm sosial media marketinqi,
+                        həm də mobil kontent vasitəsilə hədəf kütlələrə ən təsirli şəkildə çatır. Aladdin Agency,
+                        uğurunu müştərilərinin müvəffəqiyyətində görür və onların rəqəmsal bazarda inkişafını təmin etmək üçün hər zaman yanındadır.
                     </p>
                 </div>
-                <div className='h-[400px] w-2/5'>
+                <div className='h-[200px] w-2/5'>
                     <Image src={socialMedia} alt='social media image' className='w-full h-full object-contain' />
                 </div>
             </div>

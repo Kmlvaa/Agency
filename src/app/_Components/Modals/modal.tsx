@@ -10,6 +10,9 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 interface ModalProps {
     show: boolean;
     onHide: () => void;
+    name: string;
+    about: string;
+    image: string;
 }
 
 function modal(props: ModalProps) {
@@ -22,14 +25,14 @@ function modal(props: ModalProps) {
             <ModalHeader className='items-center justify-center'>
                 <ModalTitle id="contained-modal-title-vcenter">
                     <div className='w-full h-[300px] mb-3'>
-                        <Image src={ModalImage} alt='modal image' className='w-full h-full object-contain rounded-xl' />
+                        <Image src={props.image} width={300} height={300} alt='modal image' className='w-full h-full object-contain rounded-xl' />
                     </div>
-                    <h2 className='!text-MainOrange'>Mobiloqrafiya</h2>
+                    <h2 className='!text-MainOrange'>{props.name}</h2>
                 </ModalTitle>
             </ModalHeader>
             <ModalBody>
                 <p>
-                    Biz müştərilərimizə Mobilografiya sahəsində peşəkar xidmətlər təqdim edirik. Bu xidmətlərə mobil cihazlarla çəkilən yüksək keyfiyyətli foto və video çəkilişləri, vizual məzmunun redaktəsi, sosial media üçün optimallaşdırılmış vizual məzmunun hazırlanması və müxtəlif brendlərin məhsullarının yaradıcı formada təqdim edilməsi daxildir.
+                    {props.about}
                 </p>
                 <Button className='!bg-MainOrange !border-0 !text-white hover:!text-MainOrange hover:!border hover:!border-MainOrange hover:!bg-background'>Paketlərimizə bax</Button>
             </ModalBody>
